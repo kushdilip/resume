@@ -19,6 +19,7 @@
 /testem.log
 /yarn-error.log
 package-lock.json
+concat-stats-for/*
 
 # ember-try
 /.node_modules.ember-try/
