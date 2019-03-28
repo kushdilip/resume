@@ -1,0 +1,9 @@
+{{#each content as |sideItem|}}
+  {{#resume-section title=sideItem.title}}
+    <ul class="resume__section-content">
+      {{#each sideItem.items as |item|}}
+        <li>{{item}}</li>
+      {{/each}}
+    </ul>
+  {{/resume-section}}
+{{/each}}

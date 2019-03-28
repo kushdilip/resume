@@ -55,3 +55,13 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+
+## Resume Design Inspiration
+- https://medium.com/@bestfolios/10-amazing-designer-resumes-that-passed-googles-bar-deedb315ec47
+  - https://www.bestfolios.com/resume/kejia-zhao
+  - https://www.bestfolios.com/resume/rachel-schmitz
+
+
+## CSS Grid tutorial followed
+- https://css-tricks.com/snippets/css/complete-guide-grid/

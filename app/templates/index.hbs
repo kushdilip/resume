@@ -1,8 +1,37 @@
-<div class="resume__container">
-    <div class="resume__title">Dilip Kushwaha's Resume</div>
-    <div class="resume__section basic">Basic</div>
-    <div class="resume__section summary">Summary</div>
-    <div class="resume__section experience">Experience</div>
-    <div class="resume__section">Projects</div>
-    <div class="resume__section">Education</div>
-</div>
+<main class="resume__container">
+  <header class="resume__header">
+    <div class="resume__header-left">
+      <h1>{{ model.header.name }}</h1>
+      <h3>{{ model.header.title }}</h3>
+    </div>
+    <div class="resume__header-right">
+      <ul>
+        {{#each model.side_header.urls as |url|}}
+          <li>
+            <a href="https://{{url}}" rel="noopener" target="_blank">{{ url }}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </header>
+  <div class="resume__two-column">
+    <div class="resume__main-column">
+      {{#resume-section title=model.experience.title}}
+        {{#each model.experience.items as |item|}}
+          <div class="resume__experience-item">
+            <h3>{{ item.company }}</h3>
+            <h3>{{ item.title }} | {{ item.duration }}</h3>
+            <p class="resume__section-item__description">{{ item.description }}</p>
+          </div>
+        {{/each}}
+      {{/resume-section}}
+    </div>
+    <aside>
+      {{resume-aside content=model.side_content}}
+    </aside>
+  </div>
+  <footer>
+    <span>kushdilip.in</span>
+    <span>Bangalore, IN</span>
+  </footer>
+</main>
