@@ -5,7 +5,12 @@ const Funnel = require('broccoli-funnel');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    eslint: {
+      testGenerator: 'qunit',
+      group: true,
+      rulesDir: 'eslint-rules',
+      extensions: ['js'],
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -23,7 +28,7 @@ module.exports = function(defaults) {
 
   let normalizeCSS = new Funnel('node_modules/normalize.css', {
     destDir: 'assets',
-    include: ['normalize.css']
+    include: ['normalize.css'],
   });
 
   return app.toTree([normalizeCSS]);
