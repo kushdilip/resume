@@ -11,6 +11,9 @@ module.exports = function(defaults) {
       rulesDir: 'eslint-rules',
       extensions: ['js'],
     },
+    sassOptions: {
+      extension: 'scss'
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

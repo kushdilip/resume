@@ -1,0 +1,43 @@
+@import 'normalize.css';
+
+@font-face {
+  font-family: 'GothamLight';
+  font-display:  optional;
+  src: url(fonts/Gotham-Light.woff);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #d3d3d3;
+  font-family: GothamLight;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .mt0;
+}
+
+p {
+  @extend .mt0;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 12px;
+  /* text-decoration: none; */
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-inline-start: 0;
+}
